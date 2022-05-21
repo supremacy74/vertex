@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: #00000050;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    z-index: -15;
+}
+
+.container {
+    width: min(95%, 1320px);
+    margin: 0 auto;
+}
+
+.background {
+    background: no-repeat center url('./Blur.svg') #ffffff50;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    filter: blur(225px);
+}
+
